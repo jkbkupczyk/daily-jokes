@@ -1,10 +1,8 @@
 import * as React from "react";
 import '../../styles/styles.css';
 import fetchRandomJokeData from "../../Api/APIUtils";
-import '../Main/Navbar';
-import '../Main/Footer';
-import Navbar from "../Main/Navbar";
-import Footer from "../Main/Footer";
+import { Navbar, Home, Docs, Contact, Footer } from "../Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const { useState } = React;
 const { useEffect } = React;
@@ -20,14 +18,29 @@ export default function App() {
 
   return (
     <div className="App">
-      <Navbar></Navbar>
-      {
-        <div>
-          <img src={randomJokeData.avatar_url} alt={randomJokeData.name} />
-          <p>{randomJokeData.name}</p>
-        </div>
-      }
-      <Footer></Footer>
+      <Router>
+        <Navbar />
+
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route path="/Docs">
+            <Docs />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </Router>
     </div>
   );
 }

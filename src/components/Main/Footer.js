@@ -5,10 +5,10 @@ class Footer extends Component {
         return (
             <footer>
                 <p>Created with love ❤ by:</p>
-                <p>
-                    &copy; 
+                <span>
+                    &copy;
                     <a href="https://github.com/jkbkupczyk">Jakub Kupczyk</a>
-                </p>
+                </span>
             </footer>
         );
     }
