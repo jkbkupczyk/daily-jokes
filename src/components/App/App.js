@@ -2,7 +2,7 @@ import * as React from "react";
 import '../../styles/styles.css';
 import fetchRandomJokeData from "../../Api/APIUtils";
 import { Navbar, Home, Docs, Contact, Footer } from "../Main";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 const { useState } = React;
 const { useEffect } = React;
@@ -12,7 +12,7 @@ export default function App() {
 
   useEffect(() => {
     fetchRandomJokeData().then((data) => {
-      setRandomJokeData(data)
+      setRandomJokeData(data);
     })
   }, [])
 
@@ -28,7 +28,7 @@ export default function App() {
         </Switch>
 
         <Switch>
-          <Route path="/Docs">
+          <Route path="/docs">
             <Docs />
           </Route>
         </Switch>

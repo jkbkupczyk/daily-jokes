@@ -3,9 +3,13 @@ import React, { Component } from "react";
 class Home extends Component {
     render() {
         return (
-            <div>
-                Home
-            </div>
+            <section>
+                <div>
+                    <p>
+                        Home ta
+                    </p>
+                </div>
+            </section>
         );
     }
 }
