@@ -4,8 +4,7 @@ import "./Navbar.css";
 
 const navs = [
     { path: '/', name: 'Home' },
-    { path: '/docs', name: 'Docs' },
-    { path: '/contact', name: 'Contact' }];
+    { path: '/docs', name: 'Docs' }];
 
 class Navbar extends Component {
     render() {
@@ -20,12 +19,15 @@ class Navbar extends Component {
                             <NavLink exact to={nav.path}>{nav.name}</NavLink>
                         </li>
                     ))}
+                    <li>
+                        <a href="https://github.com/jkbkupczyk/daily-jokes" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
                 </ul>
 
-                <div className="burger">
-                        <div className="lin1"></div>
-                        <div className="line2"></div>
-                        <div className="line2"></div>
+                <div className="burger-bttn">
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line2"></div>
                 </div>
             </nav>
         );

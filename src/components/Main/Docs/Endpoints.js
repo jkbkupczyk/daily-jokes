@@ -7,7 +7,7 @@ const endpoints = [
     { path: '/info', desc: 'Retrieve info about all jokes' }];
 
 const models = [
-    { name: 'Joke', desc: 'Represent an single joke' }];
+    { name: 'Joke', desc: 'Represent a single joke' }];
 
 class Endpoints extends Component {
     render() {

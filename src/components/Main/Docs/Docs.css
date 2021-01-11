@@ -7,15 +7,46 @@
 }
 
 .docs-header {
-    color: #ffffff;
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    font-size: 3rem;
+    color: rgb(36, 34, 48);
+}
+
+.docs-header h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #747091;
+    margin: -2rem;
 }
 
 code {
     padding: 2px 4px;
     font-size: 1rem;
-    background-color: #f3f6fa;
+    background-color: #f6f6f6;
     color: #606060;
     border-radius: 0.3rem;
+}
+
+.gh-bttn {
+    margin: 2rem;
+    padding: 2rem;
+    color: rgba(29, 16, 218, 0.6);
+    border-radius: 0.25rem;
+}
+
+.joke {
+    display: inline-block;
+}
+
+.joke:hover {
+    cursor: pointer;
+    animation: joke-eg 1s linear infinite;
+}
+
+@keyframes joke-eg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

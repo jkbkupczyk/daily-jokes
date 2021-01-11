@@ -4,9 +4,9 @@
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    margin: 0 auto;
     padding: 1rem;
     background-color: #2a2a72;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;

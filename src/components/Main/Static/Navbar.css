@@ -2,37 +2,40 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 8vh;
-    background-color: #2a2a72;
+    color: #010101;
 }
 
 .logo {
-    color: rgb(226, 226, 226);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 1.35rem;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 40%;
     list-style-type: none;
 }
 
 .nav-links a {
-    color: rgb(226, 226, 226);
+    color: #010101;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 1.15rem;
+    margin: 0 10px;
 }
 
-.burger {
+nav a:hover {
+    border-bottom: 3px solid;
+    transition: all 150ms ease;
+}
+
+.burger-bttn {
     display: none;
 }
 
-.burger div {
+.burger-bttn div {
     width: 25px;
     height: 3px;
     background-color: rgb(172, 9, 9);
@@ -51,29 +54,7 @@ nav {
         justify-content: center;
         align-items: center;
     }
-}
-
-nav::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-nav a:hover {
-    color: #FFF;
-}
-
-nav a::before {
-    width: 0%;
-    height: 5px;
-    display: block;
-    top: 0;
-    position: absolute;
-    content: '';
-    background-color: rgb(170, 168, 168);
-    transition: all ease-in 250ms;
-}
-
-nav a:hover::before {
-    width: 10%;
+    .burger-bttn {
+        display: flex;
+    }
 }
