@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #2a2a72;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: aliceblue;
+}
+
+.footer p a {
+    color: aliceblue;
+    text-decoration: none;
+}

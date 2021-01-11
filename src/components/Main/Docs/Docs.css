@@ -1,0 +1,21 @@
+.docs {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.docs-header {
+    color: #ffffff;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 1rem;
+    background-color: #f3f6fa;
+    color: #606060;
+    border-radius: 0.3rem;
+}

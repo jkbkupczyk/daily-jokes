@@ -1,14 +1,11 @@
 import React, { Component } from "react";
+import WelcomePage from "./WelcomePage";
 
 class Home extends Component {
     render() {
         return (
             <section>
-                <div>
-                    <p>
-                        Home ta
-                    </p>
-                </div>
+                <WelcomePage />
             </section>
         );
     }

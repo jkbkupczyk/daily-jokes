@@ -1,7 +1,7 @@
-import Navbar from "./Navbar";
-import Home from "./Home";
-import Docs from "./Docs";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Navbar from "./Static/Navbar";
+import Home from "./Home/Home";
+import Docs from "./Docs/Docs";
+import Contact from "./Contact/Contact";
+import Footer from "./Static/Footer";
 
 export { Navbar, Home, Docs, Contact, Footer }; 
