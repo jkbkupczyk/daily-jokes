@@ -1,4 +1,8 @@
 nav {
+    height: 10vh;
+}
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,6 +13,15 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 1.35rem;
+    transition: all 333ms ease-in;
+}
+
+.logo:hover {
+    transform: rotate(11deg) translate3d( 0, 0, 0) 50% 50%;
+    -webkit-transform: rotate(11deg) translate3d( 0, 0, 0);
+    -moz-transform: rotate(11deg) translate3d( 0, 0, 0);
+    -ms-transform: rotate(11deg) translate3d( 0, 0, 0);
+    -o-transform: rotate(11deg) translate3d( 0, 0, 0);
 }
 
 .nav-links {
@@ -22,13 +35,13 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 1.15rem;
-    margin: 0 10px;
+    font-size: 1.45rem;
+    margin: 0 20px;
 }
 
 nav a:hover {
     border-bottom: 3px solid;
-    transition: all 150ms ease;
+    transition: all 100ms ease;
 }
 
 .burger-bttn {

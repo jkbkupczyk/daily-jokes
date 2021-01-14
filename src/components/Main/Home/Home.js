@@ -4,7 +4,7 @@ import WelcomePage from "./WelcomePage";
 class Home extends Component {
     render() {
         return (
-            <section>
+            <section className="home">
                 <WelcomePage />
             </section>
         );

@@ -6,7 +6,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <p className="">Created with love ❤ by &copy;
-                <a href="https://github.com/jkbkupczyk" target="_blank" rel="noopener, noreferrer">Jakub Kupczyk</a>
+                    <a href="https://github.com/jkbkupczyk" target="_blank" rel="noopener, noreferrer"> Jakub Kupczyk</a>
                 </p>
             </footer>
         );

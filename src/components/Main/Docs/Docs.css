@@ -4,6 +4,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    min-height: 50vh;
 }
 
 .docs-header {
@@ -15,31 +16,24 @@
     font-size: 1.75rem;
     font-weight: 400;
     color: #747091;
-    margin: -2rem;
-}
-
-code {
-    padding: 2px 4px;
-    font-size: 1rem;
-    background-color: #f6f6f6;
-    color: #606060;
-    border-radius: 0.3rem;
+    margin-top: -2.5rem;
+    padding-bottom: 2rem;
 }
 
 .gh-bttn {
-    margin: 2rem;
-    padding: 2rem;
-    color: rgba(29, 16, 218, 0.6);
+    padding: 1rem;
+    margin: 7rem 4rem;
+    font-size: 1.25rem;
+    color: black;
+    border: 2px solid black;
     border-radius: 0.25rem;
+    text-decoration: none;
 }
 
 .joke {
     display: inline-block;
-}
-
-.joke:hover {
+    animation: joke-eg 5s linear infinite;
     cursor: pointer;
-    animation: joke-eg 1s linear infinite;
 }
 
 @keyframes joke-eg {
