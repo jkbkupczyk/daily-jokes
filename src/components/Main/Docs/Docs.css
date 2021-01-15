@@ -4,7 +4,6 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    min-height: 50vh;
 }
 
 .docs-header {
@@ -22,7 +21,6 @@
 
 .gh-bttn {
     padding: 1rem;
-    margin: 7rem 4rem;
     font-size: 1.25rem;
     color: black;
     border: 2px solid black;
@@ -34,6 +32,7 @@
     display: inline-block;
     animation: joke-eg 5s linear infinite;
     cursor: pointer;
+    z-index: 9999;
 }
 
 @keyframes joke-eg {

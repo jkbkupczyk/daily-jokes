@@ -13,11 +13,15 @@
 
 .endpoint-link {
     padding: 2px 4px;
-    font-size: 1rem;
+    font-size: 1.35rem;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
     background-color: #f4f5f6;
     border-radius: 0.3rem;
     text-decoration: none;
     color: #656565;
-    font-size: 1.35rem;
     margin-right: 1rem;
+}
+
+.footer-content {
+    margin: 0 auto;
 }

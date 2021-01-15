@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../../styles/styles.css';
 import { Navbar, Home, Docs, Contact, Footer } from "../Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

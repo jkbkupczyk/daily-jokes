@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import navSlide from "./animation";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
@@ -7,6 +8,10 @@ const navs = [
     { path: '/docs', name: 'Docs' }];
 
 class Navbar extends Component {
+    componentDidMount() {
+        navSlide();
+    }
+
     render() {
         return (
             <nav>
@@ -27,7 +32,7 @@ class Navbar extends Component {
                 <div className="burger-bttn">
                     <div className="line1"></div>
                     <div className="line2"></div>
-                    <div className="line2"></div>
+                    <div className="line3"></div>
                 </div>
             </nav>
         );

@@ -1,15 +1,12 @@
 @import url("https://fonts.google.com/specimen/Poppins");
+
 body {
-  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-a {
-  text-decoration: none;
 }
