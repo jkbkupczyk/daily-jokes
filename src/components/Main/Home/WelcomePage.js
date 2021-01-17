@@ -16,12 +16,17 @@ const WelcomePage = () => {
 
     return (
         <main className="welcome-page">
-            <p>
-                {randomJokeData.login}
-            </p>
-            <p>
-                {randomJokeData.name}
-            </p>
+            <div>
+                <span>
+                    {randomJokeData.type}
+                </span>
+                <p>
+                    {randomJokeData.question}
+                </p>
+                <p>
+                    {randomJokeData.answer}
+                </p>
+            </div>
         </main>
     )
 }

@@ -2,7 +2,7 @@ const navSlide = () => {
     const burger = document.querySelector(".burger-bttn");
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links li");
-    const content = document.querySelector("section");
+    const content = document.querySelector("body");
 
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
@@ -20,11 +20,17 @@ const navSlide = () => {
         burger.classList.toggle("toggle");
     });
 
-    content.addEventListener("click", () => {
-        if (content.classList.contains("dim")) {
-            content.classList.remove("dim");
-        }
-    })
+    if (nav.classList.contains("nav-active")) {
+        content.classList.toggle("dim");
+    } else if (window.innerWidth >= 768) {
+        content.classList.remove("dim");
+        console.log(window.innerWidth);
+    }
 }
 
-export default navSlide;
+const linkClicked = () => {
+    document.querySelector("body").classList.remove("dim");
+    console.log("xDD");
+}
+
+export { navSlide, linkClicked };

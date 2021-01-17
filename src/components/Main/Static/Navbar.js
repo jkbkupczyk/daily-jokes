@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import navSlide from "./animation";
+import { navSlide, linkClicked } from "./animation";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
@@ -21,7 +21,7 @@ class Navbar extends Component {
                 <ul className="nav-links">
                     {navs.map(nav => (
                         <li key={nav.name.toLowerCase()}>
-                            <NavLink exact to={nav.path}>{nav.name}</NavLink>
+                            <NavLink exact to={nav.path} onClick={linkClicked()}>{nav.name}</NavLink>
                         </li>
                     ))}
                     <li>

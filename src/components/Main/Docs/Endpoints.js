@@ -7,9 +7,8 @@ const endpoints = [
     { path: '/info', desc: 'Retrieve info about all jokes' }];
 
 const queryParams = [
-    { param: "type", desc: 'Get jokes specified by type ex. riddle' },
-    { param: "lang", desc: 'Get jokes specified by lang ex. pl, de, es' }
-];
+    { paramName: "type", desc: 'Get jokes specified by type ex. riddle' },
+    { paramName: "lang", desc: 'Get jokes specified by lang ex. pl, de, es' }];
 
 const models = [
     { name: 'Joke', desc: 'Represent a single joke' }];
@@ -23,7 +22,7 @@ class Endpoints extends Component {
                         <h1>API Documentation</h1>
                     </header>
                     <p className="endpoint">
-                        Base URL for all endpoints:&nbsp;
+                        Base URL for all endpoints:
                         <a className="endpoint-link" href="https://daily-jokes.herokuapp.com/api" target="_blank" rel="noopener noreferrer">
                             https://daily-jokes.herokuapp.com/api
                         </a>
@@ -32,18 +31,36 @@ class Endpoints extends Component {
                     <header>
                         <h2>Endpoints</h2>
                     </header>
+                    <div>
+                        {
+                            endpoints.map(endp => (
+                                <p className="endpoint">
+                                    <a className="endpoint-link" href={'api' + endp.path} target="_blank" rel="noopener noreferrer">
+                                        {endp.path}
+                                    </a>
+                                    {endp.desc}
+                                </p>
+                            ))
+                        }
+                    </div>
+
+                    <header>
+                        <h3>Query Params</h3>
+                    </header>
                     {
-                        endpoints.map(endp => (
-                            <p className="endpoint">
-                                <a className="endpoint-link" href={'api' + endp.path} target="_blank" rel="noopener noreferrer">
-                                    {endp.path}
+                        queryParams.map(param => (
+                            <p className="endpoint" key={param.endp}>
+                                <a className="endpoint-link" href="https://github.com/jkbkupczyk/jokes-api/blob/readme-doc/docs/ENDPOINTS.md" target="_blank" rel="noopener noreferrer">
+                                    {param.paramName}
                                 </a>
-                                { endp.desc}
+                                {param.desc}
                             </p>
                         ))
                     }
 
-                    <h2>Models</h2>
+                    <header>
+                        <h2>Models</h2>
+                    </header>
                     {
                         models.map(model => (
                             <p className="endpoint" key={model.name.toLowerCase()}>

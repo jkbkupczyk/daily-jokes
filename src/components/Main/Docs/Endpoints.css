@@ -20,6 +20,7 @@
     text-decoration: none;
     color: #656565;
     margin-right: 1rem;
+    z-index: 9999;
 }
 
 .footer-content {
